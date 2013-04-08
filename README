@@ -12,13 +12,14 @@
             DAGSmith smith = new DAGSmith();
             boolean[][] dag = smith.generateRandomDAG(10, 2);
             System.out.println(DAGTools.printDAG(dag));
-            System.out.println("Generated a " + dag.length +"x"+dag[0].length + " DAG with " + DAGTools.getEdges(dag) + " edges.");
-        
+            System.out.println("Generated a " + dag.length + "x" + dag[0].length +
+                    " DAG with " + DAGTools.getEdges(dag) + " edges.");
+            
             /*
              * Save file to disk
              */
             DAGTools.saveToFile(dag, "1.dag");
-        
+            
             /*
              * Read file from disk
              */
@@ -26,7 +27,8 @@
             try {
                 dag = parse.parseDependancies("1.dag");
                 System.out.println(DAGTools.printDAG(dag));
-                System.out.println("Read a " + dag.length +"x"+dag[0].length + " DAG with " + DAGTools.getEdges(dag) + " edges.");
+                System.out.println("Read a " + dag.length + "x" + dag[0].length +
+                        " DAG with " + DAGTools.getEdges(dag) + " edges.");
             } catch (Exception e) {
                 System.out.println("Failed getting file!");
                 e.printStackTrace();
