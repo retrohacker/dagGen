@@ -1,0 +1,53 @@
+{
+  "hosts": [
+    {
+      "quantity": 20,
+      "ram": 7680,
+      "storage": 45000,
+      "bw": 2000,
+      "processors": [
+        2000,
+        2000,
+        2000
+      ]
+    }
+  ],
+  "vmInstances": [
+    {
+      "mips": 1200,
+      "size": 1000,
+      "ram": 1740,
+      "bw": 163840,
+      "pesNumber": 1
+    },
+    {
+      "mips": 2400,
+      "size": 1000,
+      "ram": 3840,
+      "bw": 419840,
+      "pesNumber": 2
+    },
+    {
+      "mips": 3000,
+      "size": 1000,
+      "ram": 7680,
+      "bw": 870400,
+      "pesNumber": 4
+    },
+    {
+      "mips": 3000,
+      "size": 1000,
+      "ram": 15360,
+      "bw": 1730560,
+      "pesNumber": 8
+    }
+  ],
+  "cloudlets": [
+    {
+      "MillionsOfInstructions": 41620,
+      "Processors": 1,
+      "inputFileSize": 12525,
+      "outputFileSize": 24071
+    }
+  ]
+}

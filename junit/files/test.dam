@@ -1,0 +1,5 @@
+#Dependancy Mapping Format
+JOBCOUNT 5 
+PARENT 0 CHILD 1 2 3
+PARENT 1 CHILD 2 3
+PARENT 4 CHILD 0 2

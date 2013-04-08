@@ -1,0 +1,1301 @@
+{
+  "datacenterCharacteristics": {
+    "architecture": "x86",
+    "os": "Linux",
+    "vmm": "Xen",
+    "timeZone": 0.0,
+    "costPerSec": 0.0,
+    "costPerMem": 0.05,
+    "costPerStorage": 0.1,
+    "costPerBw": 0.1
+  },
+  "hosts": [
+    {
+      "quantity": 20,
+      "ram": 2560,
+      "storage": 45000,
+      "bw": 1000,
+      "processors": [
+        1000,
+        2000,
+        1000,
+        1500
+      ]
+    },
+    {
+      "quantity": 20,
+      "ram": 6656,
+      "storage": 30000,
+      "bw": 14000,
+      "processors": [
+        2000,
+        1500
+      ]
+    },
+    {
+      "quantity": 20,
+      "ram": 6656,
+      "storage": 35000,
+      "bw": 1000,
+      "processors": [
+        2000,
+        2000,
+        1000,
+        1000
+      ]
+    },
+    {
+      "quantity": 20,
+      "ram": 6144,
+      "storage": 55000,
+      "bw": 14000,
+      "processors": [
+        1000
+      ]
+    },
+    {
+      "quantity": 20,
+      "ram": 4096,
+      "storage": 100000,
+      "bw": 20000,
+      "processors": [
+        1000,
+        1000,
+        1500,
+        1500
+      ]
+    }
+  ],
+  "vmInstances": [
+    {
+      "mips": 1200,
+      "size": 1000,
+      "ram": 1740,
+      "bw": 163840,
+      "pesNumber": 1
+    },
+    {
+      "mips": 2400,
+      "size": 1000,
+      "ram": 3840,
+      "bw": 419840,
+      "pesNumber": 2
+    },
+    {
+      "mips": 3000,
+      "size": 1000,
+      "ram": 7680,
+      "bw": 870400,
+      "pesNumber": 4
+    },
+    {
+      "mips": 3000,
+      "size": 1000,
+      "ram": 15360,
+      "bw": 1730560,
+      "pesNumber": 8
+    }
+  ],
+  "cloudlets": [
+    {
+      "MillionsOfInstructions": 57907,
+      "Processors": 1,
+      "inputFileSize": 10525,
+      "outputFileSize": 27845
+    },
+    {
+      "MillionsOfInstructions": 73678,
+      "Processors": 1,
+      "inputFileSize": 27408,
+      "outputFileSize": 13302
+    },
+    {
+      "MillionsOfInstructions": 26236,
+      "Processors": 2,
+      "inputFileSize": 25912,
+      "outputFileSize": 22285
+    },
+    {
+      "MillionsOfInstructions": 28776,
+      "Processors": 1,
+      "inputFileSize": 14001,
+      "outputFileSize": 16326
+    },
+    {
+      "MillionsOfInstructions": 83077,
+      "Processors": 1,
+      "inputFileSize": 18665,
+      "outputFileSize": 16122
+    },
+    {
+      "MillionsOfInstructions": 83722,
+      "Processors": 2,
+      "inputFileSize": 10021,
+      "outputFileSize": 11954
+    },
+    {
+      "MillionsOfInstructions": 74288,
+      "Processors": 1,
+      "inputFileSize": 15148,
+      "outputFileSize": 16325
+    },
+    {
+      "MillionsOfInstructions": 71376,
+      "Processors": 2,
+      "inputFileSize": 18603,
+      "outputFileSize": 27168
+    },
+    {
+      "MillionsOfInstructions": 34664,
+      "Processors": 2,
+      "inputFileSize": 19141,
+      "outputFileSize": 17269
+    },
+    {
+      "MillionsOfInstructions": 29821,
+      "Processors": 1,
+      "inputFileSize": 14145,
+      "outputFileSize": 16187
+    },
+    {
+      "MillionsOfInstructions": 13366,
+      "Processors": 1,
+      "inputFileSize": 23549,
+      "outputFileSize": 17844
+    },
+    {
+      "MillionsOfInstructions": 64065,
+      "Processors": 2,
+      "inputFileSize": 11731,
+      "outputFileSize": 27388
+    },
+    {
+      "MillionsOfInstructions": 59948,
+      "Processors": 1,
+      "inputFileSize": 25951,
+      "outputFileSize": 11808
+    },
+    {
+      "MillionsOfInstructions": 90519,
+      "Processors": 1,
+      "inputFileSize": 19725,
+      "outputFileSize": 12270
+    },
+    {
+      "MillionsOfInstructions": 89068,
+      "Processors": 1,
+      "inputFileSize": 19302,
+      "outputFileSize": 24203
+    },
+    {
+      "MillionsOfInstructions": 71515,
+      "Processors": 1,
+      "inputFileSize": 22132,
+      "outputFileSize": 15113
+    },
+    {
+      "MillionsOfInstructions": 69574,
+      "Processors": 2,
+      "inputFileSize": 24572,
+      "outputFileSize": 27722
+    },
+    {
+      "MillionsOfInstructions": 13043,
+      "Processors": 1,
+      "inputFileSize": 14040,
+      "outputFileSize": 23822
+    },
+    {
+      "MillionsOfInstructions": 76828,
+      "Processors": 1,
+      "inputFileSize": 26684,
+      "outputFileSize": 10924
+    },
+    {
+      "MillionsOfInstructions": 43282,
+      "Processors": 1,
+      "inputFileSize": 28221,
+      "outputFileSize": 16732
+    },
+    {
+      "MillionsOfInstructions": 54891,
+      "Processors": 1,
+      "inputFileSize": 23434,
+      "outputFileSize": 14887
+    },
+    {
+      "MillionsOfInstructions": 51050,
+      "Processors": 2,
+      "inputFileSize": 27407,
+      "outputFileSize": 14380
+    },
+    {
+      "MillionsOfInstructions": 18278,
+      "Processors": 1,
+      "inputFileSize": 14913,
+      "outputFileSize": 16819
+    },
+    {
+      "MillionsOfInstructions": 64180,
+      "Processors": 2,
+      "inputFileSize": 23752,
+      "outputFileSize": 29217
+    },
+    {
+      "MillionsOfInstructions": 69523,
+      "Processors": 2,
+      "inputFileSize": 22708,
+      "outputFileSize": 20575
+    },
+    {
+      "MillionsOfInstructions": 15255,
+      "Processors": 2,
+      "inputFileSize": 24436,
+      "outputFileSize": 29026
+    },
+    {
+      "MillionsOfInstructions": 65570,
+      "Processors": 1,
+      "inputFileSize": 11464,
+      "outputFileSize": 10503
+    },
+    {
+      "MillionsOfInstructions": 76407,
+      "Processors": 1,
+      "inputFileSize": 10737,
+      "outputFileSize": 15504
+    },
+    {
+      "MillionsOfInstructions": 84284,
+      "Processors": 2,
+      "inputFileSize": 12247,
+      "outputFileSize": 18249
+    },
+    {
+      "MillionsOfInstructions": 12583,
+      "Processors": 2,
+      "inputFileSize": 22680,
+      "outputFileSize": 26647
+    },
+    {
+      "MillionsOfInstructions": 39655,
+      "Processors": 2,
+      "inputFileSize": 12567,
+      "outputFileSize": 13208
+    },
+    {
+      "MillionsOfInstructions": 30999,
+      "Processors": 2,
+      "inputFileSize": 29342,
+      "outputFileSize": 11694
+    },
+    {
+      "MillionsOfInstructions": 14129,
+      "Processors": 1,
+      "inputFileSize": 14079,
+      "outputFileSize": 23989
+    },
+    {
+      "MillionsOfInstructions": 26769,
+      "Processors": 2,
+      "inputFileSize": 14488,
+      "outputFileSize": 26578
+    },
+    {
+      "MillionsOfInstructions": 12914,
+      "Processors": 2,
+      "inputFileSize": 13588,
+      "outputFileSize": 29666
+    },
+    {
+      "MillionsOfInstructions": 96098,
+      "Processors": 2,
+      "inputFileSize": 21228,
+      "outputFileSize": 19553
+    },
+    {
+      "MillionsOfInstructions": 35339,
+      "Processors": 1,
+      "inputFileSize": 26898,
+      "outputFileSize": 13284
+    },
+    {
+      "MillionsOfInstructions": 59490,
+      "Processors": 1,
+      "inputFileSize": 14034,
+      "outputFileSize": 14764
+    },
+    {
+      "MillionsOfInstructions": 27832,
+      "Processors": 2,
+      "inputFileSize": 16383,
+      "outputFileSize": 26368
+    },
+    {
+      "MillionsOfInstructions": 88678,
+      "Processors": 1,
+      "inputFileSize": 15806,
+      "outputFileSize": 17546
+    },
+    {
+      "MillionsOfInstructions": 81093,
+      "Processors": 1,
+      "inputFileSize": 15719,
+      "outputFileSize": 13199
+    },
+    {
+      "MillionsOfInstructions": 44349,
+      "Processors": 1,
+      "inputFileSize": 23197,
+      "outputFileSize": 27564
+    },
+    {
+      "MillionsOfInstructions": 94672,
+      "Processors": 1,
+      "inputFileSize": 26429,
+      "outputFileSize": 24763
+    },
+    {
+      "MillionsOfInstructions": 63045,
+      "Processors": 2,
+      "inputFileSize": 29809,
+      "outputFileSize": 17391
+    },
+    {
+      "MillionsOfInstructions": 29114,
+      "Processors": 2,
+      "inputFileSize": 19798,
+      "outputFileSize": 24140
+    },
+    {
+      "MillionsOfInstructions": 86773,
+      "Processors": 1,
+      "inputFileSize": 23269,
+      "outputFileSize": 15164
+    },
+    {
+      "MillionsOfInstructions": 70035,
+      "Processors": 2,
+      "inputFileSize": 27252,
+      "outputFileSize": 22632
+    },
+    {
+      "MillionsOfInstructions": 38389,
+      "Processors": 2,
+      "inputFileSize": 27147,
+      "outputFileSize": 12241
+    },
+    {
+      "MillionsOfInstructions": 89824,
+      "Processors": 2,
+      "inputFileSize": 11116,
+      "outputFileSize": 15367
+    },
+    {
+      "MillionsOfInstructions": 95363,
+      "Processors": 1,
+      "inputFileSize": 13569,
+      "outputFileSize": 10782
+    },
+    {
+      "MillionsOfInstructions": 25028,
+      "Processors": 1,
+      "inputFileSize": 20987,
+      "outputFileSize": 25742
+    },
+    {
+      "MillionsOfInstructions": 80198,
+      "Processors": 1,
+      "inputFileSize": 27905,
+      "outputFileSize": 26159
+    },
+    {
+      "MillionsOfInstructions": 41787,
+      "Processors": 2,
+      "inputFileSize": 23844,
+      "outputFileSize": 18410
+    },
+    {
+      "MillionsOfInstructions": 93914,
+      "Processors": 2,
+      "inputFileSize": 25323,
+      "outputFileSize": 21315
+    },
+    {
+      "MillionsOfInstructions": 30546,
+      "Processors": 1,
+      "inputFileSize": 29628,
+      "outputFileSize": 13326
+    },
+    {
+      "MillionsOfInstructions": 79270,
+      "Processors": 1,
+      "inputFileSize": 10654,
+      "outputFileSize": 15939
+    },
+    {
+      "MillionsOfInstructions": 41578,
+      "Processors": 2,
+      "inputFileSize": 21880,
+      "outputFileSize": 25199
+    },
+    {
+      "MillionsOfInstructions": 65906,
+      "Processors": 1,
+      "inputFileSize": 12327,
+      "outputFileSize": 14432
+    },
+    {
+      "MillionsOfInstructions": 29113,
+      "Processors": 1,
+      "inputFileSize": 15823,
+      "outputFileSize": 10217
+    },
+    {
+      "MillionsOfInstructions": 96259,
+      "Processors": 1,
+      "inputFileSize": 13538,
+      "outputFileSize": 13790
+    },
+    {
+      "MillionsOfInstructions": 58169,
+      "Processors": 2,
+      "inputFileSize": 22659,
+      "outputFileSize": 23738
+    },
+    {
+      "MillionsOfInstructions": 29970,
+      "Processors": 2,
+      "inputFileSize": 12836,
+      "outputFileSize": 17059
+    },
+    {
+      "MillionsOfInstructions": 54806,
+      "Processors": 1,
+      "inputFileSize": 16243,
+      "outputFileSize": 24472
+    },
+    {
+      "MillionsOfInstructions": 29516,
+      "Processors": 1,
+      "inputFileSize": 22928,
+      "outputFileSize": 21583
+    },
+    {
+      "MillionsOfInstructions": 10966,
+      "Processors": 2,
+      "inputFileSize": 18073,
+      "outputFileSize": 16219
+    },
+    {
+      "MillionsOfInstructions": 80348,
+      "Processors": 2,
+      "inputFileSize": 13106,
+      "outputFileSize": 20113
+    },
+    {
+      "MillionsOfInstructions": 72928,
+      "Processors": 1,
+      "inputFileSize": 11606,
+      "outputFileSize": 15272
+    },
+    {
+      "MillionsOfInstructions": 76284,
+      "Processors": 2,
+      "inputFileSize": 14914,
+      "outputFileSize": 17052
+    },
+    {
+      "MillionsOfInstructions": 69952,
+      "Processors": 2,
+      "inputFileSize": 15092,
+      "outputFileSize": 28984
+    },
+    {
+      "MillionsOfInstructions": 11940,
+      "Processors": 2,
+      "inputFileSize": 25738,
+      "outputFileSize": 29461
+    },
+    {
+      "MillionsOfInstructions": 77797,
+      "Processors": 1,
+      "inputFileSize": 19209,
+      "outputFileSize": 19892
+    },
+    {
+      "MillionsOfInstructions": 53942,
+      "Processors": 1,
+      "inputFileSize": 29427,
+      "outputFileSize": 14146
+    },
+    {
+      "MillionsOfInstructions": 61425,
+      "Processors": 2,
+      "inputFileSize": 27961,
+      "outputFileSize": 16212
+    },
+    {
+      "MillionsOfInstructions": 20451,
+      "Processors": 1,
+      "inputFileSize": 22855,
+      "outputFileSize": 29391
+    },
+    {
+      "MillionsOfInstructions": 62609,
+      "Processors": 2,
+      "inputFileSize": 14095,
+      "outputFileSize": 29823
+    },
+    {
+      "MillionsOfInstructions": 58395,
+      "Processors": 1,
+      "inputFileSize": 27245,
+      "outputFileSize": 19654
+    },
+    {
+      "MillionsOfInstructions": 70724,
+      "Processors": 2,
+      "inputFileSize": 29897,
+      "outputFileSize": 29919
+    },
+    {
+      "MillionsOfInstructions": 17927,
+      "Processors": 1,
+      "inputFileSize": 27427,
+      "outputFileSize": 27532
+    },
+    {
+      "MillionsOfInstructions": 94238,
+      "Processors": 2,
+      "inputFileSize": 11539,
+      "outputFileSize": 19796
+    },
+    {
+      "MillionsOfInstructions": 81238,
+      "Processors": 1,
+      "inputFileSize": 27709,
+      "outputFileSize": 27278
+    },
+    {
+      "MillionsOfInstructions": 95072,
+      "Processors": 2,
+      "inputFileSize": 28971,
+      "outputFileSize": 14164
+    },
+    {
+      "MillionsOfInstructions": 96658,
+      "Processors": 1,
+      "inputFileSize": 10643,
+      "outputFileSize": 13464
+    },
+    {
+      "MillionsOfInstructions": 58146,
+      "Processors": 2,
+      "inputFileSize": 29852,
+      "outputFileSize": 25939
+    },
+    {
+      "MillionsOfInstructions": 83051,
+      "Processors": 1,
+      "inputFileSize": 22982,
+      "outputFileSize": 27694
+    },
+    {
+      "MillionsOfInstructions": 24885,
+      "Processors": 1,
+      "inputFileSize": 27720,
+      "outputFileSize": 27221
+    },
+    {
+      "MillionsOfInstructions": 59627,
+      "Processors": 1,
+      "inputFileSize": 12008,
+      "outputFileSize": 24038
+    },
+    {
+      "MillionsOfInstructions": 46737,
+      "Processors": 1,
+      "inputFileSize": 17611,
+      "outputFileSize": 22774
+    },
+    {
+      "MillionsOfInstructions": 82150,
+      "Processors": 1,
+      "inputFileSize": 15628,
+      "outputFileSize": 23482
+    },
+    {
+      "MillionsOfInstructions": 16071,
+      "Processors": 1,
+      "inputFileSize": 20898,
+      "outputFileSize": 10642
+    },
+    {
+      "MillionsOfInstructions": 73052,
+      "Processors": 1,
+      "inputFileSize": 27235,
+      "outputFileSize": 16163
+    },
+    {
+      "MillionsOfInstructions": 52225,
+      "Processors": 1,
+      "inputFileSize": 12463,
+      "outputFileSize": 26655
+    },
+    {
+      "MillionsOfInstructions": 42127,
+      "Processors": 1,
+      "inputFileSize": 10810,
+      "outputFileSize": 11820
+    },
+    {
+      "MillionsOfInstructions": 71979,
+      "Processors": 1,
+      "inputFileSize": 17662,
+      "outputFileSize": 19374
+    },
+    {
+      "MillionsOfInstructions": 48123,
+      "Processors": 1,
+      "inputFileSize": 15602,
+      "outputFileSize": 19827
+    },
+    {
+      "MillionsOfInstructions": 37565,
+      "Processors": 1,
+      "inputFileSize": 14304,
+      "outputFileSize": 15722
+    },
+    {
+      "MillionsOfInstructions": 92752,
+      "Processors": 1,
+      "inputFileSize": 22031,
+      "outputFileSize": 23329
+    },
+    {
+      "MillionsOfInstructions": 23142,
+      "Processors": 2,
+      "inputFileSize": 19474,
+      "outputFileSize": 21671
+    },
+    {
+      "MillionsOfInstructions": 57394,
+      "Processors": 2,
+      "inputFileSize": 17888,
+      "outputFileSize": 16409
+    },
+    {
+      "MillionsOfInstructions": 74877,
+      "Processors": 1,
+      "inputFileSize": 11803,
+      "outputFileSize": 22011
+    },
+    {
+      "MillionsOfInstructions": 81122,
+      "Processors": 2,
+      "inputFileSize": 27079,
+      "outputFileSize": 22724
+    },
+    {
+      "MillionsOfInstructions": 55202,
+      "Processors": 1,
+      "inputFileSize": 24702,
+      "outputFileSize": 25555
+    },
+    {
+      "MillionsOfInstructions": 31526,
+      "Processors": 1,
+      "inputFileSize": 22919,
+      "outputFileSize": 24740
+    },
+    {
+      "MillionsOfInstructions": 88535,
+      "Processors": 2,
+      "inputFileSize": 11396,
+      "outputFileSize": 10221
+    },
+    {
+      "MillionsOfInstructions": 62095,
+      "Processors": 1,
+      "inputFileSize": 15230,
+      "outputFileSize": 17969
+    },
+    {
+      "MillionsOfInstructions": 69028,
+      "Processors": 1,
+      "inputFileSize": 29160,
+      "outputFileSize": 17946
+    },
+    {
+      "MillionsOfInstructions": 37429,
+      "Processors": 2,
+      "inputFileSize": 11441,
+      "outputFileSize": 12101
+    },
+    {
+      "MillionsOfInstructions": 13371,
+      "Processors": 2,
+      "inputFileSize": 10222,
+      "outputFileSize": 29727
+    },
+    {
+      "MillionsOfInstructions": 57130,
+      "Processors": 1,
+      "inputFileSize": 27919,
+      "outputFileSize": 23437
+    },
+    {
+      "MillionsOfInstructions": 28195,
+      "Processors": 2,
+      "inputFileSize": 17007,
+      "outputFileSize": 22039
+    },
+    {
+      "MillionsOfInstructions": 10209,
+      "Processors": 2,
+      "inputFileSize": 29703,
+      "outputFileSize": 14458
+    },
+    {
+      "MillionsOfInstructions": 21555,
+      "Processors": 1,
+      "inputFileSize": 27915,
+      "outputFileSize": 18440
+    },
+    {
+      "MillionsOfInstructions": 23774,
+      "Processors": 2,
+      "inputFileSize": 22346,
+      "outputFileSize": 23100
+    },
+    {
+      "MillionsOfInstructions": 64522,
+      "Processors": 2,
+      "inputFileSize": 23509,
+      "outputFileSize": 16449
+    },
+    {
+      "MillionsOfInstructions": 13707,
+      "Processors": 2,
+      "inputFileSize": 23657,
+      "outputFileSize": 13110
+    },
+    {
+      "MillionsOfInstructions": 59621,
+      "Processors": 2,
+      "inputFileSize": 14375,
+      "outputFileSize": 29667
+    },
+    {
+      "MillionsOfInstructions": 36954,
+      "Processors": 1,
+      "inputFileSize": 28155,
+      "outputFileSize": 18354
+    },
+    {
+      "MillionsOfInstructions": 82190,
+      "Processors": 2,
+      "inputFileSize": 23038,
+      "outputFileSize": 11617
+    },
+    {
+      "MillionsOfInstructions": 39593,
+      "Processors": 2,
+      "inputFileSize": 21728,
+      "outputFileSize": 20948
+    },
+    {
+      "MillionsOfInstructions": 45227,
+      "Processors": 2,
+      "inputFileSize": 13596,
+      "outputFileSize": 27760
+    },
+    {
+      "MillionsOfInstructions": 18895,
+      "Processors": 1,
+      "inputFileSize": 27536,
+      "outputFileSize": 12454
+    },
+    {
+      "MillionsOfInstructions": 26545,
+      "Processors": 2,
+      "inputFileSize": 14157,
+      "outputFileSize": 24640
+    },
+    {
+      "MillionsOfInstructions": 65473,
+      "Processors": 1,
+      "inputFileSize": 15459,
+      "outputFileSize": 14651
+    },
+    {
+      "MillionsOfInstructions": 70039,
+      "Processors": 1,
+      "inputFileSize": 15854,
+      "outputFileSize": 10949
+    },
+    {
+      "MillionsOfInstructions": 77634,
+      "Processors": 1,
+      "inputFileSize": 17894,
+      "outputFileSize": 17059
+    },
+    {
+      "MillionsOfInstructions": 61590,
+      "Processors": 2,
+      "inputFileSize": 15453,
+      "outputFileSize": 28229
+    },
+    {
+      "MillionsOfInstructions": 73450,
+      "Processors": 2,
+      "inputFileSize": 27358,
+      "outputFileSize": 15206
+    },
+    {
+      "MillionsOfInstructions": 77969,
+      "Processors": 2,
+      "inputFileSize": 22089,
+      "outputFileSize": 13180
+    },
+    {
+      "MillionsOfInstructions": 38545,
+      "Processors": 2,
+      "inputFileSize": 23549,
+      "outputFileSize": 16332
+    },
+    {
+      "MillionsOfInstructions": 51301,
+      "Processors": 1,
+      "inputFileSize": 29520,
+      "outputFileSize": 20694
+    },
+    {
+      "MillionsOfInstructions": 96294,
+      "Processors": 2,
+      "inputFileSize": 17243,
+      "outputFileSize": 15732
+    },
+    {
+      "MillionsOfInstructions": 42069,
+      "Processors": 2,
+      "inputFileSize": 23363,
+      "outputFileSize": 16911
+    },
+    {
+      "MillionsOfInstructions": 98027,
+      "Processors": 2,
+      "inputFileSize": 14115,
+      "outputFileSize": 23528
+    },
+    {
+      "MillionsOfInstructions": 54971,
+      "Processors": 2,
+      "inputFileSize": 24901,
+      "outputFileSize": 24084
+    },
+    {
+      "MillionsOfInstructions": 90147,
+      "Processors": 2,
+      "inputFileSize": 27673,
+      "outputFileSize": 25644
+    },
+    {
+      "MillionsOfInstructions": 96190,
+      "Processors": 1,
+      "inputFileSize": 24609,
+      "outputFileSize": 13826
+    },
+    {
+      "MillionsOfInstructions": 65173,
+      "Processors": 2,
+      "inputFileSize": 20449,
+      "outputFileSize": 15699
+    },
+    {
+      "MillionsOfInstructions": 26723,
+      "Processors": 1,
+      "inputFileSize": 29130,
+      "outputFileSize": 19021
+    },
+    {
+      "MillionsOfInstructions": 99680,
+      "Processors": 1,
+      "inputFileSize": 28628,
+      "outputFileSize": 18921
+    },
+    {
+      "MillionsOfInstructions": 62117,
+      "Processors": 1,
+      "inputFileSize": 21269,
+      "outputFileSize": 25628
+    },
+    {
+      "MillionsOfInstructions": 13104,
+      "Processors": 2,
+      "inputFileSize": 22040,
+      "outputFileSize": 25651
+    },
+    {
+      "MillionsOfInstructions": 13473,
+      "Processors": 1,
+      "inputFileSize": 11006,
+      "outputFileSize": 19816
+    },
+    {
+      "MillionsOfInstructions": 20998,
+      "Processors": 2,
+      "inputFileSize": 16523,
+      "outputFileSize": 29158
+    },
+    {
+      "MillionsOfInstructions": 53499,
+      "Processors": 2,
+      "inputFileSize": 11817,
+      "outputFileSize": 16293
+    },
+    {
+      "MillionsOfInstructions": 98974,
+      "Processors": 1,
+      "inputFileSize": 17220,
+      "outputFileSize": 26209
+    },
+    {
+      "MillionsOfInstructions": 77319,
+      "Processors": 1,
+      "inputFileSize": 17996,
+      "outputFileSize": 12848
+    },
+    {
+      "MillionsOfInstructions": 98958,
+      "Processors": 2,
+      "inputFileSize": 27265,
+      "outputFileSize": 16450
+    },
+    {
+      "MillionsOfInstructions": 72630,
+      "Processors": 2,
+      "inputFileSize": 12620,
+      "outputFileSize": 16535
+    },
+    {
+      "MillionsOfInstructions": 35641,
+      "Processors": 2,
+      "inputFileSize": 18469,
+      "outputFileSize": 18990
+    },
+    {
+      "MillionsOfInstructions": 84510,
+      "Processors": 2,
+      "inputFileSize": 10157,
+      "outputFileSize": 27408
+    },
+    {
+      "MillionsOfInstructions": 90902,
+      "Processors": 2,
+      "inputFileSize": 14445,
+      "outputFileSize": 22821
+    },
+    {
+      "MillionsOfInstructions": 47635,
+      "Processors": 1,
+      "inputFileSize": 17877,
+      "outputFileSize": 10875
+    },
+    {
+      "MillionsOfInstructions": 49840,
+      "Processors": 1,
+      "inputFileSize": 10625,
+      "outputFileSize": 18609
+    },
+    {
+      "MillionsOfInstructions": 21682,
+      "Processors": 1,
+      "inputFileSize": 10474,
+      "outputFileSize": 26499
+    },
+    {
+      "MillionsOfInstructions": 60276,
+      "Processors": 2,
+      "inputFileSize": 13615,
+      "outputFileSize": 21189
+    },
+    {
+      "MillionsOfInstructions": 96520,
+      "Processors": 1,
+      "inputFileSize": 18623,
+      "outputFileSize": 28460
+    },
+    {
+      "MillionsOfInstructions": 25521,
+      "Processors": 1,
+      "inputFileSize": 24774,
+      "outputFileSize": 16394
+    },
+    {
+      "MillionsOfInstructions": 23629,
+      "Processors": 1,
+      "inputFileSize": 24346,
+      "outputFileSize": 13184
+    },
+    {
+      "MillionsOfInstructions": 34057,
+      "Processors": 1,
+      "inputFileSize": 15320,
+      "outputFileSize": 19240
+    },
+    {
+      "MillionsOfInstructions": 68506,
+      "Processors": 2,
+      "inputFileSize": 12940,
+      "outputFileSize": 17074
+    },
+    {
+      "MillionsOfInstructions": 79625,
+      "Processors": 2,
+      "inputFileSize": 13485,
+      "outputFileSize": 10058
+    },
+    {
+      "MillionsOfInstructions": 38554,
+      "Processors": 2,
+      "inputFileSize": 25997,
+      "outputFileSize": 24819
+    },
+    {
+      "MillionsOfInstructions": 46783,
+      "Processors": 1,
+      "inputFileSize": 13180,
+      "outputFileSize": 25507
+    },
+    {
+      "MillionsOfInstructions": 96821,
+      "Processors": 2,
+      "inputFileSize": 11458,
+      "outputFileSize": 13637
+    },
+    {
+      "MillionsOfInstructions": 42228,
+      "Processors": 1,
+      "inputFileSize": 27939,
+      "outputFileSize": 13212
+    },
+    {
+      "MillionsOfInstructions": 73892,
+      "Processors": 2,
+      "inputFileSize": 22145,
+      "outputFileSize": 16556
+    },
+    {
+      "MillionsOfInstructions": 60711,
+      "Processors": 1,
+      "inputFileSize": 21102,
+      "outputFileSize": 22999
+    },
+    {
+      "MillionsOfInstructions": 81919,
+      "Processors": 1,
+      "inputFileSize": 27817,
+      "outputFileSize": 17283
+    },
+    {
+      "MillionsOfInstructions": 59454,
+      "Processors": 2,
+      "inputFileSize": 26132,
+      "outputFileSize": 22137
+    },
+    {
+      "MillionsOfInstructions": 77306,
+      "Processors": 1,
+      "inputFileSize": 22516,
+      "outputFileSize": 26974
+    },
+    {
+      "MillionsOfInstructions": 76886,
+      "Processors": 1,
+      "inputFileSize": 27820,
+      "outputFileSize": 27374
+    },
+    {
+      "MillionsOfInstructions": 42615,
+      "Processors": 1,
+      "inputFileSize": 20442,
+      "outputFileSize": 28674
+    },
+    {
+      "MillionsOfInstructions": 49454,
+      "Processors": 2,
+      "inputFileSize": 14706,
+      "outputFileSize": 21556
+    },
+    {
+      "MillionsOfInstructions": 44887,
+      "Processors": 1,
+      "inputFileSize": 29528,
+      "outputFileSize": 16820
+    },
+    {
+      "MillionsOfInstructions": 40455,
+      "Processors": 2,
+      "inputFileSize": 23584,
+      "outputFileSize": 15225
+    },
+    {
+      "MillionsOfInstructions": 13082,
+      "Processors": 1,
+      "inputFileSize": 20244,
+      "outputFileSize": 28944
+    },
+    {
+      "MillionsOfInstructions": 27182,
+      "Processors": 2,
+      "inputFileSize": 19153,
+      "outputFileSize": 17745
+    },
+    {
+      "MillionsOfInstructions": 80633,
+      "Processors": 2,
+      "inputFileSize": 21768,
+      "outputFileSize": 29682
+    },
+    {
+      "MillionsOfInstructions": 52129,
+      "Processors": 1,
+      "inputFileSize": 20682,
+      "outputFileSize": 23089
+    },
+    {
+      "MillionsOfInstructions": 97811,
+      "Processors": 1,
+      "inputFileSize": 16555,
+      "outputFileSize": 11355
+    },
+    {
+      "MillionsOfInstructions": 31924,
+      "Processors": 2,
+      "inputFileSize": 19001,
+      "outputFileSize": 14533
+    },
+    {
+      "MillionsOfInstructions": 82963,
+      "Processors": 1,
+      "inputFileSize": 25562,
+      "outputFileSize": 17086
+    },
+    {
+      "MillionsOfInstructions": 91946,
+      "Processors": 1,
+      "inputFileSize": 17969,
+      "outputFileSize": 29394
+    },
+    {
+      "MillionsOfInstructions": 80736,
+      "Processors": 2,
+      "inputFileSize": 22650,
+      "outputFileSize": 27973
+    },
+    {
+      "MillionsOfInstructions": 83848,
+      "Processors": 1,
+      "inputFileSize": 13920,
+      "outputFileSize": 14124
+    },
+    {
+      "MillionsOfInstructions": 92480,
+      "Processors": 1,
+      "inputFileSize": 21514,
+      "outputFileSize": 15157
+    },
+    {
+      "MillionsOfInstructions": 77615,
+      "Processors": 2,
+      "inputFileSize": 19422,
+      "outputFileSize": 16254
+    },
+    {
+      "MillionsOfInstructions": 76736,
+      "Processors": 2,
+      "inputFileSize": 25631,
+      "outputFileSize": 19160
+    },
+    {
+      "MillionsOfInstructions": 79463,
+      "Processors": 1,
+      "inputFileSize": 11744,
+      "outputFileSize": 22927
+    },
+    {
+      "MillionsOfInstructions": 85962,
+      "Processors": 1,
+      "inputFileSize": 23144,
+      "outputFileSize": 17822
+    },
+    {
+      "MillionsOfInstructions": 43152,
+      "Processors": 2,
+      "inputFileSize": 17614,
+      "outputFileSize": 14001
+    },
+    {
+      "MillionsOfInstructions": 48358,
+      "Processors": 2,
+      "inputFileSize": 15678,
+      "outputFileSize": 21639
+    },
+    {
+      "MillionsOfInstructions": 88138,
+      "Processors": 2,
+      "inputFileSize": 16437,
+      "outputFileSize": 29162
+    },
+    {
+      "MillionsOfInstructions": 26013,
+      "Processors": 1,
+      "inputFileSize": 17891,
+      "outputFileSize": 10177
+    },
+    {
+      "MillionsOfInstructions": 14339,
+      "Processors": 1,
+      "inputFileSize": 15276,
+      "outputFileSize": 14063
+    },
+    {
+      "MillionsOfInstructions": 99889,
+      "Processors": 2,
+      "inputFileSize": 16490,
+      "outputFileSize": 22821
+    },
+    {
+      "MillionsOfInstructions": 86911,
+      "Processors": 2,
+      "inputFileSize": 27482,
+      "outputFileSize": 27925
+    },
+    {
+      "MillionsOfInstructions": 96719,
+      "Processors": 1,
+      "inputFileSize": 12247,
+      "outputFileSize": 15413
+    },
+    {
+      "MillionsOfInstructions": 19522,
+      "Processors": 2,
+      "inputFileSize": 11744,
+      "outputFileSize": 24821
+    },
+    {
+      "MillionsOfInstructions": 13128,
+      "Processors": 1,
+      "inputFileSize": 10313,
+      "outputFileSize": 29607
+    },
+    {
+      "MillionsOfInstructions": 30637,
+      "Processors": 2,
+      "inputFileSize": 17210,
+      "outputFileSize": 26445
+    }
+  ]
+}
