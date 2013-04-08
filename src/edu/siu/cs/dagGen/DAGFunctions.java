@@ -3,7 +3,7 @@ package edu.siu.cs.dagGen;
 import java.util.Iterator;
 import java.util.Stack;
 
-public class DAMFunctions {
+class DAGFunctions {
 	
 	public static boolean[][] resolveDependancies(boolean[][] matrix) {
 		boolean[][] result = new boolean[matrix.length][matrix[0].length];
@@ -38,22 +38,22 @@ public class DAMFunctions {
 	}
 	
 	/**
-	 * Throws an error if the file does not meet the criteria for being a workflow
+	 * Throws an error if the file does not meet the criteria for being an acyclic
 	 * digraph.
 	 * 
 	 * @param matrix
 	 * Workflow Dependency Matrix
-	 * @throws DAMSelfDependent
+	 * @throws DAGSelfDependent
 	 * If a cloudlet depends on itself
 	 */
-	public static void integrityCheck(boolean[][] matrix) throws DAMSelfDependent {
+	public static void integrityCheck(boolean[][] matrix) throws DAGSelfDependent {
 		System.out.print("Checking Integrity of DAM File...");
-		boolean[][] temp = DAMFunctions.resolveDependancies(matrix);
+		boolean[][] temp = DAGFunctions.resolveDependancies(matrix);
 		if(temp.length>0) {
 			for(int i = 0;i<temp.length&&i<temp[0].length;i++) {
 				//if job depends on self
 				if(temp[i][i]) {
-					throw new DAMSelfDependent();
+					throw new DAGSelfDependent();
 				}
 			}
 		}
@@ -64,7 +64,7 @@ public class DAMFunctions {
 	private static IntegerStack depends = new IntegerStack();
 	
 	/**
-	 * Navigates the matrix and removes any self dependency.
+	 * Navigates the matrix and removes any self dependencies.
 	 * @deprecated
 	 */
 	public static boolean[][] oldRemoveSelfDependencies(boolean[][] matrix) {
@@ -79,8 +79,8 @@ public class DAMFunctions {
 	}
 	
 	public static boolean[][] removeSelfDependencies(boolean[][] matrix) {
-		TreeNode[] modules = DAMFunctions.generateTree(matrix);
-		modules = DAMFunctions.shuffleTree(modules);
+		TreeNode[] modules = DAGFunctions.generateTree(matrix);
+		modules = DAGFunctions.shuffleTree(modules);
 		if(modules==null)
 			return null;
 		return cleanTree(modules,matrix);

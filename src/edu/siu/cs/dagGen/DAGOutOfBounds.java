@@ -1,10 +1,10 @@
 package edu.siu.cs.dagGen;
 
-public class DAMOutOfBounds extends Exception {
+public class DAGOutOfBounds extends Exception {
 	
 	private static final long serialVersionUID = 2L;
 
-	public DAMOutOfBounds() {
+	public DAGOutOfBounds() {
 	}
 
 }

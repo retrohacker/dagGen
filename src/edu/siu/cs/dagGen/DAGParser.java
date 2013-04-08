@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class DAMParser {
+public class DAGParser {
 
 	FileReader stream;
 	int JobCount;
@@ -13,17 +13,17 @@ public class DAMParser {
 	ArrayList<Integer> CurrentValues;
 	String currentKeyword;
 	
-	public DAMParser(FileReader stream) {
+	public DAGParser(FileReader stream) {
 		this.stream = stream;
 		this.CurrentValues = new ArrayList<Integer>();
 	}
 	
 	@SuppressWarnings("unused")
-	private DAMParser() {
+	private DAGParser() {
 		//disable empty constructor
 	}
 	
-	public void startParse() throws DAMOutOfBounds, IOException{
+	public void startParse() throws DAGOutOfBounds, IOException{
 		//Begins parsing tokens from the stream
 		boolean comment=false;
 		StringBuilder buffer = new StringBuilder();
@@ -52,7 +52,7 @@ public class DAMParser {
 	 * @param token
 	 * A single string parsed from the file
 	 */
-	protected void token(String token) throws DAMOutOfBounds{
+	protected void token(String token) throws DAGOutOfBounds{
 		if(token.length()==0)
 			return;
 		int value = toInt(token);
@@ -84,18 +84,18 @@ public class DAMParser {
 	 * Called by dmfParser when a value is encountered
 	 * @param value
 	 */
-	protected void value(int value) throws DAMOutOfBounds {
+	protected void value(int value) throws DAGOutOfBounds {
 		//Check current keyword
 		if(this.currentKeyword.equalsIgnoreCase("jobcount")) {
 			this.JobCount = value;
 			this.generateMatrix();
 		} else if(this.currentKeyword.equalsIgnoreCase("parent")) {
 			if(value >= this.JobCount)
-				throw new DAMOutOfBounds();
+				throw new DAGOutOfBounds();
 			this.CurrentValues.add(value);
 		} else if(this.currentKeyword.equalsIgnoreCase("child")) {
 			if(value >= this.JobCount)
-				throw new DAMOutOfBounds();
+				throw new DAGOutOfBounds();
 			Iterator<Integer> it = this.CurrentValues.iterator();
 			while(it.hasNext()) {
 				this.dependancies[value][it.next().intValue()]=true;

@@ -9,10 +9,10 @@ public class SelfDependent {
 	@Test
 	public void test() {
 		try {
-			DAMParse p = new DAMParse();
-			DAMFunctions.integrityCheck(p.parseDependancies("junit/files/test4.dam"));
+			DAGParse p = new DAGParse();
+			DAGFunctions.integrityCheck(p.parseDependancies("junit/files/test4.dam"));
 			fail("Did not catch exception");
-		} catch (DAMSelfDependent e) {
+		} catch (DAGSelfDependent e) {
 			
 		} catch (Exception e) {
 			fail("Caught Wrong Exception" + e.getMessage());

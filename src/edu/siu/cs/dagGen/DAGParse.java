@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class DAMParse {
+public class DAGParse {
 	
 	/**
 	 * This function will generate a 2D matrix representing the
@@ -24,12 +24,12 @@ public class DAMParse {
 	 * Dependancy Mapping File will be imported from
 	 * @return
 	 * The array representing job dependancies.
-	 * @throws DAMFileNotFoundException 
+	 * @throws DAGFileNotFoundException 
 	 */
-	public boolean[][] parseDependancies(String filename) throws DAMFileNotFoundException, DAMSelfDependent, DAMOutOfBounds, IOException {
+	public boolean[][] parseDependancies(String filename) throws DAGFileNotFoundException, DAGSelfDependent, DAGOutOfBounds, IOException {
 		System.out.println("Opening File to Parse");
-		FileReader file = DAMParse.openFile(filename);
-		DAMParser parse = new DAMParser(file);
+		FileReader file = DAGParse.openFile(filename);
+		DAGParser parse = new DAGParser(file);
 		System.out.println("File Opened, Parsing File");
 		parse.startParse();
 		System.out.println("File Parsed and Closed");
@@ -41,11 +41,11 @@ public class DAMParse {
 	 * @param filename
 	 * @return
 	 */
-	private static FileReader openFile(String filename) throws DAMFileNotFoundException {
+	private static FileReader openFile(String filename) throws DAGFileNotFoundException {
 		try {
 			return new FileReader(filename);
 		} catch (FileNotFoundException e) {
-			throw new DAMFileNotFoundException(filename);
+			throw new DAGFileNotFoundException(filename);
 		}
 		
 	}

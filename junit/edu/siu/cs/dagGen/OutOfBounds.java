@@ -12,11 +12,11 @@ public class OutOfBounds {
 	public void throwsErrorChild() {
 		try {
 			FileReader file = new FileReader("junit/files/test3_2.dam");
-			DAMParser parse = new DAMParser(file);
+			DAGParser parse = new DAGParser(file);
 			parse.startParse();
 			parse.getResult();
 			fail("Did not catch exception");
-		} catch(DAMOutOfBounds e) {
+		} catch(DAGOutOfBounds e) {
 			
 		} catch(Exception e) {
 			fail("Caught wrong exception");
@@ -27,11 +27,11 @@ public class OutOfBounds {
 	public void throwsErrorParent() {
 		try {
 			FileReader file = new FileReader("junit/files/test3.dam");
-			DAMParser parse = new DAMParser(file);
+			DAGParser parse = new DAGParser(file);
 			parse.startParse();
 			parse.getResult();
 			fail("Did not catch exception");
-		} catch(DAMOutOfBounds e) {
+		} catch(DAGOutOfBounds e) {
 			
 		} catch(Exception e) {
 			fail("Caught wrong exception");

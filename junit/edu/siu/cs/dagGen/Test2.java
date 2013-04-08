@@ -28,11 +28,11 @@ public class Test2 {
 					{false,false,false, true,false,false, true,false,false,false,false}//10
 					};
 			FileReader file = new FileReader("junit/files/test2.dam");
-			DAMParser parse = new DAMParser(file);
+			DAGParser parse = new DAGParser(file);
 			parse.startParse();
 			boolean[][] result = parse.getResult();
 			Assert.assertArrayEquals(this.GenerateError(correct, result),correct, result);
-			DAMFunctions.integrityCheck(result);
+			DAGFunctions.integrityCheck(result);
 		} catch (FileNotFoundException e) {
 			fail("File 'test2.dam' Not Found!");
 		} catch(Exception e) {
@@ -57,13 +57,12 @@ public class Test2 {
 					{false,false, true,false,false,false,false,false,false,false,false},//9
 					{false,false,false, true,false,false, true,false, true,false,false}//10
 					};
-			
 			FileReader file = new FileReader("junit/files/test2.dam");
-			DAMParser parse = new DAMParser(file);
+			DAGParser parse = new DAGParser(file);
 			parse.startParse();
-			boolean[][] result = DAMFunctions.resolveDependancies(parse.getResult());
+			boolean[][] result = DAGFunctions.resolveDependancies(parse.getResult());
 			Assert.assertArrayEquals(this.GenerateError(correct, result),correct, result);
-			DAMFunctions.integrityCheck(result);
+			DAGFunctions.integrityCheck(result);
 		} catch(FileNotFoundException e) {
 			fail("File 'test2.dam' Not Found!");
 		} catch(Exception e) {

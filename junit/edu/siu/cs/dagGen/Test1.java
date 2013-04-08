@@ -25,11 +25,11 @@ public class Test1 {
 					{false,false,false,false,false, true, true,false},//7
 					};
 			FileReader file = new FileReader("junit/files/test1.dam");
-			DAMParser parse = new DAMParser(file);
+			DAGParser parse = new DAGParser(file);
 			parse.startParse();
 			boolean[][] result = parse.getResult();
 			Assert.assertArrayEquals(this.GenerateError(correct, result),correct, result);
-			DAMFunctions.integrityCheck(result);
+			DAGFunctions.integrityCheck(result);
 		} catch (FileNotFoundException e) {
 			fail("File 'test1.dam' Not Found!");
 		} catch (Exception e) {
@@ -53,11 +53,11 @@ public class Test1 {
 					};
 			
 			FileReader file = new FileReader("junit/files/test1.dam");
-			DAMParser parse = new DAMParser(file);
+			DAGParser parse = new DAGParser(file);
 			parse.startParse();
-			boolean[][] result = DAMFunctions.resolveDependancies(parse.getResult());
+			boolean[][] result = DAGFunctions.resolveDependancies(parse.getResult());
 			Assert.assertArrayEquals(this.GenerateError(correct, result),correct, result);
-			DAMFunctions.integrityCheck(result);
+			DAGFunctions.integrityCheck(result);
 		} catch(FileNotFoundException e) {
 			fail("File 'test1.dam' Not Found!");
 		} catch(Exception e) {
