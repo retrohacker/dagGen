@@ -27,7 +27,7 @@ public class Test2 {
 					{false,false, true,false,false,false,false,false,false,false,false},//9
 					{false,false,false, true,false,false, true,false,false,false,false}//10
 					};
-			FileReader file = new FileReader("files/test2.dam");
+			FileReader file = new FileReader("junit/files/test2.dam");
 			DAMParser parse = new DAMParser(file);
 			parse.startParse();
 			boolean[][] result = parse.getResult();
@@ -58,7 +58,7 @@ public class Test2 {
 					{false,false,false, true,false,false, true,false, true,false,false}//10
 					};
 			
-			FileReader file = new FileReader("files/test2.dam");
+			FileReader file = new FileReader("junit/files/test2.dam");
 			DAMParser parse = new DAMParser(file);
 			parse.startParse();
 			boolean[][] result = DAMFunctions.resolveDependancies(parse.getResult());

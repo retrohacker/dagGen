@@ -11,7 +11,7 @@ public class OutOfBounds {
 	@Test
 	public void throwsErrorChild() {
 		try {
-			FileReader file = new FileReader("files/test3_2.dam");
+			FileReader file = new FileReader("junit/files/test3_2.dam");
 			DAMParser parse = new DAMParser(file);
 			parse.startParse();
 			parse.getResult();
@@ -26,7 +26,7 @@ public class OutOfBounds {
 	@Test
 	public void throwsErrorParent() {
 		try {
-			FileReader file = new FileReader("files/test3.dam");
+			FileReader file = new FileReader("junit/files/test3.dam");
 			DAMParser parse = new DAMParser(file);
 			parse.startParse();
 			parse.getResult();

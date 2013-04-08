@@ -10,7 +10,7 @@ public class SelfDependent {
 	public void test() {
 		try {
 			DAMParse p = new DAMParse();
-			DAMFunctions.integrityCheck(p.parseDependancies("files/test4.dam"));
+			DAMFunctions.integrityCheck(p.parseDependancies("junit/files/test4.dam"));
 			fail("Did not catch exception");
 		} catch (DAMSelfDependent e) {
 			
