@@ -1,4 +1,4 @@
-package edu.siu.cs.FileIO.dam;
+package edu.siu.cs.dagGen;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

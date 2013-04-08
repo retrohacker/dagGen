@@ -1,4 +1,4 @@
-package edu.siu.cs.FileIO.dam;
+package edu.siu.cs.dagGen;
 
 public class DAMFileNotFoundException extends Exception {
 

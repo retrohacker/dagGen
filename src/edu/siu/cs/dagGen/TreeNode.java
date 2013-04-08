@@ -1,4 +1,4 @@
-package edu.siu.cs.FileIO.dam;
+package edu.siu.cs.dagGen;
 
 import java.util.ArrayList;
 
