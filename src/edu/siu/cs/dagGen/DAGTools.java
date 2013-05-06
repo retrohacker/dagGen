@@ -8,8 +8,9 @@ import java.util.Stack;
 
 public class DAGTools {
 	
+	public static boolean log = false;
+	
 	public static String printDAG(boolean[][] matrix) {
-		System.out.println("Generating String For STD Output...");
 		StringBuilder result = new StringBuilder(matrix.length*(matrix[0].length*3));
 		for(int i = 0; i < matrix.length; i++) {
 			result.append("|");
@@ -37,14 +38,17 @@ public class DAGTools {
 
 	
 	public static void saveToFile(boolean[][] matrix, String FileName) {
-		System.out.println("Smithing File Contents...");
+		if(log)
+			System.out.println("Smithing File Contents...");
 		String result = smithFileContents(matrix);
-		System.out.println("Writing File To Disk");
+		if(log)
+			System.out.println("Writing File To Disk");
 		writeFile(result, FileName);
 	}
 	
 	private static String smithFileContents(boolean[][] matrix) {
-		System.out.println("Assembling File Contents...");
+		if(log)
+			System.out.println("Assembling File Contents...");
 		StringBuilder result = new StringBuilder("JOBCOUNT " + ((matrix[0].length>matrix.length)?matrix[0].length:matrix.length));
 		Stack<Integer> stack = new Stack<Integer>();
 		for(int i = 0; i < matrix[0].length; i++) {
@@ -75,9 +79,11 @@ public class DAGTools {
 				else
 					output.write(contents.substring(i).getBytes());
 			}
-			System.out.println("Write Finished, Closing Stream");
+			if(log)
+				System.out.println("Write Finished, Closing Stream");
 			output.close();
-			System.out.println("Stream closed");
+			if(log)
+				System.out.println("Stream closed");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

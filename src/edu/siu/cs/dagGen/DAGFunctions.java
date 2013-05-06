@@ -5,6 +5,8 @@ import java.util.Stack;
 
 class DAGFunctions {
 	
+	public static boolean log = true;
+	
 	public static boolean[][] resolveDependancies(boolean[][] matrix) {
 		boolean[][] result = new boolean[matrix.length][matrix[0].length];
 		for(int i = 0;i<matrix.length;i++) {
@@ -47,7 +49,8 @@ class DAGFunctions {
 	 * If a cloudlet depends on itself
 	 */
 	public static void integrityCheck(boolean[][] matrix) throws DAGSelfDependent {
-		System.out.print("Checking Integrity of DAM File...");
+		if(log)
+			System.out.print("Checking Integrity of DAM File...");
 		boolean[][] temp = DAGFunctions.resolveDependancies(matrix);
 		if(temp.length>0) {
 			for(int i = 0;i<temp.length&&i<temp[0].length;i++) {
@@ -57,7 +60,8 @@ class DAGFunctions {
 				}
 			}
 		}
-		System.out.println(" File Passed Integrity Check!");
+		if(log)
+			System.out.println(" File Passed Integrity Check!");
 	}
 	
 	//Used for the recursive part of removeSelfDependencies()
@@ -68,9 +72,11 @@ class DAGFunctions {
 	 * @deprecated
 	 */
 	public static boolean[][] oldRemoveSelfDependencies(boolean[][] matrix) {
-		System.out.println("Removing Dependencies...");
+		if(log)
+			System.out.println("Removing Dependencies...");
 		for(int i = 0; i < matrix.length; i++) {
-			System.out.println("Checking Row "+i);
+			if(log)
+				System.out.println("Checking Row "+i);
 			depends.push(i);
 			buildStack(matrix, i);
 			depends.clear();
@@ -87,7 +93,8 @@ class DAGFunctions {
 	}
 	
 	private static TreeNode[] shuffleTree(TreeNode[] tree) {
-		System.out.println("Shuffling Tree References...");
+		if(log)
+			System.out.println("Shuffling Tree References...");
 		for(int i=0;i<tree.length;i++) {
 			tree[i].shuffle();
 		}
@@ -101,7 +108,8 @@ class DAGFunctions {
 	 * A cleaned tree data structure
 	 */
 	private static boolean[][] cleanTree(TreeNode[] tree, boolean[][] matrix) {
-		System.out.println("Removing Self Dependencies Using Tree...");
+		if(log)
+			System.out.println("Removing Self Dependencies Using Tree...");
 		//Keeps track of which nodes have been checked for circular references
 		boolean[] checked = new boolean[tree.length];
 		
@@ -142,7 +150,8 @@ class DAGFunctions {
 	 * @return
 	 */
 	private static TreeNode[] generateTree(boolean[][] matrix) {
-		System.out.println("Building Tree Data Structure...");
+		if(log)
+			System.out.println("Building Tree Data Structure...");
 		//Get the number of nodes we will be generating
 		int size = matrix.length;
 		if(matrix.length>0)
@@ -183,7 +192,8 @@ class DAGFunctions {
 	}
 	
 	public static void printMatrix(boolean[][] matrix) {
-		System.out.println("Generating String For STD Output...");
+		if(log)
+			System.out.println("Generating String For STD Output...");
 		StringBuilder result = new StringBuilder(matrix.length*(matrix[0].length*3));
 		for(int i = 0; i < matrix.length; i++) {
 			result.append("|");

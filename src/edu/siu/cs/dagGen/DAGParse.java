@@ -6,6 +6,15 @@ import java.io.IOException;
 
 public class DAGParse {
 	
+	private boolean log;
+	
+	public DAGParse() {
+		log=false;
+	}
+	
+	public DAGParse(boolean log) {
+		this.log = log;
+	}
 	/**
 	 * This function will generate a 2D matrix representing the
 	 * edges of a directional digraph were 1 means the job
@@ -27,12 +36,15 @@ public class DAGParse {
 	 * @throws DAGFileNotFoundException 
 	 */
 	public boolean[][] parseDependancies(String filename) throws DAGFileNotFoundException, DAGSelfDependent, DAGOutOfBounds, IOException {
-		System.out.println("Opening File to Parse");
+		if(log)
+			System.out.println("Opening File to Parse");
 		FileReader file = DAGParse.openFile(filename);
 		DAGParser parse = new DAGParser(file);
-		System.out.println("File Opened, Parsing File");
+		if(log)
+			System.out.println("File Opened, Parsing File");
 		parse.startParse();
-		System.out.println("File Parsed and Closed");
+		if(log)
+			System.out.println("File Parsed and Closed");
 		return parse.getResult();
 	}
 	
