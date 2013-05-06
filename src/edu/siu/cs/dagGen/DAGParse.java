@@ -39,7 +39,7 @@ public class DAGParse {
 		if(log)
 			System.out.println("Opening File to Parse");
 		FileReader file = DAGParse.openFile(filename);
-		DAGParser parse = new DAGParser(file);
+		DAGFileParser parse = new DAGFileParser(file);
 		if(log)
 			System.out.println("File Opened, Parsing File");
 		parse.startParse();

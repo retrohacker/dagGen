@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class DAGParser {
+class DAGFileParser {
 
 	FileReader stream;
 	int JobCount;
@@ -13,13 +13,13 @@ public class DAGParser {
 	ArrayList<Integer> CurrentValues;
 	String currentKeyword;
 	
-	public DAGParser(FileReader stream) {
+	public DAGFileParser(FileReader stream) {
 		this.stream = stream;
 		this.CurrentValues = new ArrayList<Integer>();
 	}
 	
 	@SuppressWarnings("unused")
-	private DAGParser() {
+	private DAGFileParser() {
 		//disable empty constructor
 	}
 	

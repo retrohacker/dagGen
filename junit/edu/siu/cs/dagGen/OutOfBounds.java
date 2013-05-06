@@ -12,7 +12,7 @@ public class OutOfBounds {
 	public void throwsErrorChild() {
 		try {
 			FileReader file = new FileReader("junit/files/test3_2.dam");
-			DAGParser parse = new DAGParser(file);
+			DAGFileParser parse = new DAGFileParser(file);
 			parse.startParse();
 			parse.getResult();
 			fail("Did not catch exception");
@@ -27,7 +27,7 @@ public class OutOfBounds {
 	public void throwsErrorParent() {
 		try {
 			FileReader file = new FileReader("junit/files/test3.dam");
-			DAGParser parse = new DAGParser(file);
+			DAGFileParser parse = new DAGFileParser(file);
 			parse.startParse();
 			parse.getResult();
 			fail("Did not catch exception");

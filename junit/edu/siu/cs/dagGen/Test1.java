@@ -25,7 +25,7 @@ public class Test1 {
 					{false,false,false,false,false, true, true,false},//7
 					};
 			FileReader file = new FileReader("junit/files/test1.dam");
-			DAGParser parse = new DAGParser(file);
+			DAGFileParser parse = new DAGFileParser(file);
 			parse.startParse();
 			boolean[][] result = parse.getResult();
 			Assert.assertArrayEquals(this.GenerateError(correct, result),correct, result);
@@ -53,7 +53,7 @@ public class Test1 {
 					};
 			
 			FileReader file = new FileReader("junit/files/test1.dam");
-			DAGParser parse = new DAGParser(file);
+			DAGFileParser parse = new DAGFileParser(file);
 			parse.startParse();
 			boolean[][] result = DAGFunctions.resolveDependancies(parse.getResult());
 			Assert.assertArrayEquals(this.GenerateError(correct, result),correct, result);
