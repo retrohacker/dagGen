@@ -8,8 +8,19 @@ import java.util.Stack;
 
 public class DAGTools {
 	
+	/**
+	 * To debug or not to debug, that is the question.
+	 */
 	public static boolean log = false;
 	
+	/**
+	 * Generates a string that represents the matrix in human readable form. Any wrapper class for DAGs may find this useful for
+	 * overloading the toString() function for that object.
+	 * @param matrix
+	 * The matrix that we are printing as a DAG
+	 * @return
+	 * A human readable string that represents the matrix
+	 */
 	public static String printDAG(boolean[][] matrix) {
 		StringBuilder result = new StringBuilder(matrix.length*(matrix[0].length*3));
 		for(int i = 0; i < matrix.length; i++) {
@@ -28,6 +39,13 @@ public class DAGTools {
 		return result.toString();
 	}
 	
+	/**
+	 * Returns the number of edges connecting vertices in a Directed Acyclic Graph.
+	 * This function does not ensure the graph is acyclic, it simply counts the number of true values in the 2D matrix.
+	 * @param matrix
+	 * The dependency adjacency matrix representing a DAG. 
+	 * @return
+	 */
 	public static int getEdges(boolean[][] matrix) {
 		int count = 0;
 		for(int i = 0; i < matrix.length; i++)
@@ -36,7 +54,13 @@ public class DAGTools {
 		return count;
 	}
 
-	
+	/**
+	 * Exports a DAG to a file. The format of the file is derived from dagman but is not compatible with dagman.
+	 * @param matrix
+	 * The DAG that will be converted to a file.
+	 * @param FileName
+	 * The name of the file we will save the generated matrix to
+	 */
 	public static void saveToFile(boolean[][] matrix, String FileName) {
 		if(log)
 			System.out.println("Smithing File Contents...");

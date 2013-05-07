@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 /**
  * A simple node to be used in a tree structure. This class supports the method
- * DAMFunctions.removeSelfDependencies()
+ * DAGFunctions.removeSelfDependencies()
  * @author Crackers
  *
  * @param <T>
  */
-public class TreeNode {
+class TreeNode {
 	public int id;
 	public ArrayList<TreeNode> children;
 	

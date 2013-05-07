@@ -50,7 +50,7 @@ class DAGFunctions {
 	 */
 	public static void integrityCheck(boolean[][] matrix) throws DAGSelfDependent {
 		if(log)
-			System.out.print("Checking Integrity of DAM File...");
+			System.out.print("Checking Integrity of DAG File...");
 		boolean[][] temp = DAGFunctions.resolveDependancies(matrix);
 		if(temp.length>0) {
 			for(int i = 0;i<temp.length&&i<temp[0].length;i++) {
